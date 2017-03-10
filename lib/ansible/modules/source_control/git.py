@@ -1039,6 +1039,7 @@ def main():
     # switch to version specified regardless of whether
     # we got new revisions from the repository
     if not bare:
+        print("ERROR! NOT A BARE REPOSITORY")
         switch_version(git_path, module, dest, remote, version, verify_commit, depth)
 
     # Deal with submodules
